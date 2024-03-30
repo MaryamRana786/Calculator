@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #97bbdf;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background: #003366;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+
+
+.navbar img {
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 219, 255), rgb(20, 0, 255));
+}
+
+.area1 {
+    height: 90vh;
+    width: 20%;
+
+}
+
+
+
+.calculatorarea {
+    width: 60%;
+    height: 70vh;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+
+
+.extraspace {
+    height: 15vh;
+    width: 100%;
+
+}
+
+
+
+.calculator {
+    height: 54vh;
+    width: 100%;
+    background-color: white;
+    border: 3px solid black;
+}
+
+.inputfield {
+    height: 11vh;
+    width: 100%;
+}
+
+
+
+
+.inputspace {
+    height: 5vh;
+    width: 100%;
+}
+
+
+.input {
+    height: 6vh;
+    width: 96%;
+    padding: 3px;
+    font-size: 20px;
+    margin: 2px;
+    margin-left: 13px;
+    cursor: text;
+    text-align: right;
+    font-family: arial, helvetica, sans-serif;
+    background-color:rgb(12, 12, 105);
+    border: 1px solid #336699;
+    border-radius: 0px;
+    color: #fff;
+}
+
+#hi{height: 5vh;
+    width: 100%;
+    padding: 4px;
+    font-size: 20px;
+    cursor: text;
+    text-align: right;
+    font-family: arial, helvetica, sans-serif;
+    background-color: rgb(12, 12, 105);
+    border: 1px solid #336699;
+    border-radius: 0px;
+    color: #fff;}
+
+
+
+
+.calculatorcontent {
+    height: 43vh;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+}
+
+.leftcalculator {
+    height: 40vh;
+    width: 50%;
+    background-color: darkmagenta;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.first {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.third {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fourth {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fifth {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scifun {
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin: 1px;
+    border: 1px solid #a2bbd4;
+    border-radius: 3px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    padding: 4px 8px;
+    background-color: #e5ecf3;
+}
+.scifun:hover {
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin: 1px;
+    border: 1px solid #a2bbd4;
+    border-radius: 3px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #e5ecf3;
+    padding: 4px 8px;
+    cursor: pointer;
+    background-color: rgb(31, 28, 28);
+}
+
+
+
+.calculatornew {
+    display: none;
+}
+
+.rightcalculator {
+    height: 40vh;
+    width: 50%;
+
+}
+
+.one {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.two {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.three {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.four {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.five {
+    height: 8vh;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.scinum {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 4px;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin: 1px;
+    border: 1px solid #336699;
+    border-radius: 3px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background-color: #aec0d3;
+}
+
+.scinum:hover {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 4px;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin: 1px;
+    border: 1px solid #336699;
+    border-radius: 3px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgb(0, 0, 255);
+}
+.lastextra {
+    height: 20vh;
+    width: 100%;
+
+}
+
+
+.area2 {
+    height: 90vh;
+    width: 20%;
+
+}
+
+@media only screen and (max-width: 944px) {
+
+    .leftcalculator {
+        display: none;
+    }
+
+    .rightcalculator {
+        display: none;
+    }
+
+    .calculator {
+        width: 70%;
+        height: 50vh;
+    }
+
+    .calculatorarea {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(to right, rgb(0, 219, 255), rgb(20, 0, 255));
+    }
+
+
+    .calculatornew {
+        align-items: center;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
+        width: 60%;
+        background-color: white;
+        border: 3px solid black;
+        margin-left: 100px;
+        box-shadow: 1px 2px 3px 20px #1536b9;
+        
+    }
+
+    .nav {
+        height: 5vh;
+        width: 90%;
+        background-color: #0058ff;
+        margin-bottom: 5px;
+        margin-top: 15px;
+        color: white;
+    }
+.nav input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #0058ff;
+}
+    .areanew {
+        height: 25vh;
+        width: 90%;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+       
+    }
+
+    .o1 {
+        height: 5vh;
+        width: 100%;
+        background-color: white;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 16px;
+        color: #000;
+        text-align: left;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .o2 {
+        height: 5vh;
+        width: 100%;
+        background-color: white;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 16px;
+        color: #000;
+        text-align: left;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .o3 {
+        height: 5vh;
+        width: 100%;
+        background-color: white;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 16px;
+        color: #000;
+        text-align: left;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .o4 {
+        height: 5vh;
+        width: 100%;
+        background-color: white;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 16px;
+        color: #000;
+        text-align: left;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    
+}
+
+

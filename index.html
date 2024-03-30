@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator.net: Free Online Calculators - Math, Fitness, Finance, Science</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <img src="Untitled.png">
+
+
+
+        </div>
+
+        <div class="main">
+            <div class="calculatornew">
+
+                <div class="nav">
+                    <input type="text" id="display" placeholder="ENTER" readonly>
+                </div>
+
+                <div class="areanew">
+
+                    <div class="o1">
+                        <span class="scinum"onclick="addDisplay('7')">7</span>
+                        <span class="scinum"onclick="addDisplay('8')">8</span>
+                        <span class="scinum" onclick="addDisplay('9')">9</span>
+                        <span class="scifun"onclick="addDisplay('+')">+</span>
+                        <span class="scifun"onclick="addDisplay('%')">%</span>
+                    </div>
+                    <div class="o2"> 
+                        <span class="scinum" onclick="addDisplay('4')">4</span>
+                                <span class="scinum"onclick="addDisplay('5')">5</span>
+                                <span class="scinum" onclick="addDisplay('6')">6</span>
+                                <span class="scifun"onclick="addDisplay('-')">-</span>
+                                <span class="scifun" onclick="addDisplay('Ans')">Ans</span>
+                    </div>
+                    <div class="o3">
+                        <span class="scinum" onclick="addDisplay('1')">1</span>
+                        <span class="scinum"onclick="addDisplay('2')">2</span>
+                        <span class="scinum" onclick="addDisplay('3')">3</span>
+                        <span class="scifun" onclick="addDisplay('*')">x</span>
+                        <span class="scifun"onclick="calculate()">=</span>
+                        </div>
+                    <div class="o4"> 
+                        <span class="scinum"onclick="addDisplay('0')">0</span>
+                        <span class="scinum"onclick="addDisplay('.')">.</span>
+                        <span class="scinum"onclick="addDisplay('00')">00</span>
+                        <span class="scifun"onclick="addDisplay('/')">/</span>
+                        <span class="scifun"onclick="clearplay()" class="clear">AC</span></div>
+                   
+                </div>
+            </div>
+
+
+            <div class="calculatorarea">
+
+
+                <div class="calculator">
+
+
+                    <div class="inputfield">
+                        <div class="inputspace"></div>
+                        <div class="input" >
+                            <input id="hi" placeholder="Write Your Calculation">
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="calculatorcontent">
+
+
+                        <div class="leftcalculator">
+                            <div class="first">
+                                <span class="scifun"onclick="addToDisplay('sin')">sin</span>
+                                <span class="scifun"onclick="addToDisplay('cos')">cos</span>
+                                <span class="scifun"onclick="addToDisplay('tan')">tan</span>
+                                <span> <label for="input"><input type="radio">Deg</label></span>
+                                <span><label for="input"><input type="radio">Rad</label></span>
+                            </div>
+                            <div class="second">
+                                <span class="scifun"onclick="addToDisplay('sin-1')">sin<sup>-1</sup></span>
+                                <span class="scifun"onclick="addToDisplay('cos-1')">cos<sup>-1</sup></span>
+                                <span class="scifun"onclick="addToDisplay('tan-1')">tan<sup>-1</sup></span>
+                                <span class="scifun"onclick="addToDisplay('π')">π</span>
+                                <span class="scifun"onclick="addToDisplay('e')">e</span>
+
+
+                            </div>
+                            <div class="third">
+                                <span class="scifun"onclick="addToDisplay('x^y')">x<sup>y</sup></span>
+                                <span class="scifun"onclick="addToDisplay('x^2')">x<sup>2</sup></span>
+                                <span class="scifun"onclick="addToDisplay('x^3')">x<sup>3</sup></span>
+                                <span class="scifun"onclick="addToDisplay('e^x')">e<sup>x</sup></span>
+                                <span class="scifun"onclick="addToDisplay('10^x')">10<sup>x</sup></span>
+
+
+                            </div>
+                            <div class="fourth">
+                                <span class="scifun"onclick="addToDisplay('y^√x')"><sup>y</sup>√x</span>
+                                <span class="scifun"onclick="addToDisplay('3^√x')"><sup>3</sup>√x</span>
+                                <span class="scifun"onclick="addToDisplay('√x')">√x</span>
+                                <span class="scifun"onclick="addToDisplay('In')">In</span>
+                                <span class="scifun"onclick="addToDisplay('log')">log</span>
+
+
+                            </div>
+                            <div class="fifth">
+
+                                <span class="scifun"onclick="addToDisplay('(')">(</span>
+                                <span class="scifun"onclick="addToDisplay(')')">)</span>
+                                <span class="scifun"onclick="addToDisplay('1/x')">1/x</span>
+                                <span class="scifun"onclick="addToDisplay('%')">%</span>
+                                <span class="scifun"onclick="addToDisplay('n!')">n!</span>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+                        <div class="rightcalculator">
+
+                            <div class="one">
+                                <span class="scinum"onclick="addToDisplay('7')">7</span>
+                                <span class="scinum" onclick="addToDisplay('8')">8</span>
+                                <span class="scinum"onclick="addToDisplay('9')">9</span>
+                                <span class="scifun"onclick="addToDisplay('+')">+</span>
+                                <span class="scifun"onclick="addToDisplay('00')">00</span>
+                            </div>
+                            <div class="two">
+                                <span class="scinum"onclick="addToDisplay('4')">4</span>
+                                <span class="scinum"onclick="addToDisplay('5')">5</span>
+                                <span class="scinum"onclick="addToDisplay('6')">6</span>
+                                <span class="scifun"onclick="addToDisplay('-')">-</span>
+                                <span class="scifun"onclick="addToDisplay('Ans')">Ans</span>
+                            </div>
+                            <div class="three">
+                                <span class="scinum"onclick="addToDisplay('1')">1</span>
+                                <span class="scinum"onclick="addToDisplay('2')">2</span>
+                                <span class="scinum"onclick="addToDisplay('3')">3</span>
+                                <span class="scifun"onclick="addToDisplay('X')">x</span>
+                                <span class="scifun"onclick="addToDisplay('M+')">M+</span>
+                            </div>
+                            <div class="four">
+                                <span class="scinum"onclick="addToDisplay('0')">0</span>
+                                <span class="scinum"onclick="addToDisplay('.')">.</span>
+                                <span class="scinum"onclick="addToDisplay('EXP')">EXP</span>
+                                <span class="scifun"onclick="addToDisplay('/')">/</span>
+                                <span class="scifun"onclick="addToDisplay('M-')">M-</span>
+                            </div>
+                            <div class="five">
+                                <span class="scifun"onclick="addToDisplay('±')">±</span>
+                                <span class="scifun"onclick="addToDisplay('RND')">RND</span>
+                                <span class="scinum"onclick="clearDisplay()" class="clear">AC</span>
+                                <span class="scinum"onclick="cal()">=</span>
+                                <span class="scifun"onclick="addToDisplay('MR')">MR</span>
+                                
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <script>
+            function addDisplay(value) {
+                document.getElementById('display').value += value;
+            }
+        
+            function clearplay() {
+                document.getElementById('display').value = '';
+            }
+        
+            function calculate() {
+                var displayValue = document.getElementById('display').value;
+                var result;
+                try {
+                    result = eval(displayValue);
+                } catch (error) {
+                    result = 'Error';
+                }
+                document.getElementById('display').value = result;
+            }
+
+
+
+
+
+            function addToDisplay(value) {
+                document.getElementById('hi').value += value;
+            }
+        
+            function clearDisplay() {
+                document.getElementById('hi').value = '';
+            }
+        
+            function cal() {
+                var displayValue = document.getElementById('hi').value;
+                var result;
+                try {
+                    result = eval(displayValue);
+                } catch (error) {
+                    result = 'Error';
+                }
+                document.getElementById('hi').value = result;}
+
+        </script>
+
+</body>
+
+</html>
